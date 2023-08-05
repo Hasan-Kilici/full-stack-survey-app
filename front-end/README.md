@@ -1,47 +1,50 @@
-# Svelte + Vite
 
-This template should help get you started developing with Svelte in Vite.
+# front-end
 
-## Recommended IDE Setup
+Bu proje, Svelte kullanılarak oluşturulan harika bir web uygulamasıdır.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Başlangıç
 
-## Need an official Svelte framework?
+Bu adımları takip ederek projeyi yerel makinenizde çalıştırabilirsiniz.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### Gereksinimler
 
-## Technical considerations
+- Node.js ve npm yüklü olmalıdır.
 
-**Why use this over SvelteKit?**
+### Kurulum
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+1. Proje klasörüne gidin:
+   ```
+   cd front-end
+   ```
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+2. Bağımlılıkları yükleyin:
+   ```
+   npm install
+   ```
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+### Geliştirme Sunucusunu Başlatma
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Geliştirme sunucusunu başlatmak için aşağıdaki komutu çalıştırın:
+   ```
+   npm run dev
+   ```
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+Bu komut, uygulamanızı http://localhost:5000 adresinde çalıştıracaktır. Tarayıcınızda bu adrese giderek uygulamanızı görebilirsiniz.
 
-**Why include `.vscode/extensions.json`?**
+### Yapılandırma ve Build
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+Projeyi yapılandırmak ve optimize etmek için aşağıdaki komutu kullanabilirsiniz:
+   ```
+   npm run build
+   ```
 
-**Why enable `checkJs` in the JS template?**
+Bu komut, projenizin dağıtım sürümünü oluşturur ve `public` klasörüne çıktı verir.
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+## Katkıda Bulunma
 
-**Why is HMR not preserving my local component state?**
+Katkılarınız için teşekkürler! Lütfen Pull Request göndermeden önce değişikliklerinizin uygun olduğundan emin olun.
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+## Lisans
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
