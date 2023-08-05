@@ -1,10 +1,10 @@
 # full-stack-survey-app
 Go-fiber,PostgreSQL ve svelte ile yaptığım anket sitesi
-![image](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/4ad1c684-0fbe-4ecf-b4cd-035b3839dee3)
-![image](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/036ab912-c436-46f3-960b-c175e94919f7)
-![image](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/fedfb08d-4398-4d91-bddc-75843b0d8351)
-![image](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/5a89124b-00c3-4ac3-b5cb-5ac032a1d019)
-![image](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/b43fe255-63d3-4c67-ac31-f5c2114202ac)
+- ![Ekran görüntüsü 2023-08-05 184452](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/8818b075-7a60-4db6-814a-d4783d514ef8)
+- ![Ekran görüntüsü 2023-08-05 184518](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/2f38bcde-7842-48cd-b38a-2e3ecbcf3868)
+- ![Ekran görüntüsü 2023-08-05 135336](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/45d8dc8f-38f6-4e0f-946d-2e9f246485cb)
+- ![Ekran görüntüsü 2023-08-05 184551](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/95ee74db-74df-4e46-a4b9-c1dbae887569)
+- ![Ekran görüntüsü 2023-08-05 184635](https://github.com/Hasan-Kilici/full-stack-survey-app/assets/105741983/7558ad49-76b4-4d73-bcfc-36d3be6635fd)
 
 VSC'de çalıştırmak için 2 tane terminal açın
 birine
