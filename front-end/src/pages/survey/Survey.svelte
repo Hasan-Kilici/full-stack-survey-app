@@ -64,7 +64,10 @@
 </script>
 <main>
     {#if user.Perm == "Admin"}
-        <button on:click={DeleteSurvey(token)}>Anketi sil</button>
+        <div>
+<button on:click={DeleteSurvey(token)} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">Anketi sil</button>
+        <div class="pt-4"></div>
+</div>
     {/if}
     {#if !error}
         <h3>{title}</h3>

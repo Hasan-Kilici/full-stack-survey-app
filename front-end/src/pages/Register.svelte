@@ -81,13 +81,18 @@
   </script>
   <main>
     {#if error}
-      <div id="error">{error}</div>
+      <div id="error" class="text-red-400 font-extrabold text-center">{error}</div>
     {/if}
   
-    <input type="text" id="username" placeholder="Kullanıcı adı" />
-    <input type="text" id="email" placeholder="Email" />
-    <input type="password" id="pass" placeholder="Şifre" />
-    <button on:click={Register}>Kaydol</button>
+    <div class="p-4 mb-1.5">
+     <input type="text" id="username" placeholder="Kullanıcı adı" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600" />
+     <div class="pt-4"></div>
+     <input type="text" id="email" placeholder="Email" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600"/>
+     <div class="pt-4"></div>
+     <input type="password" id="pass" placeholder="Şifre" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600"/>
+      <div class="pt-4"></div>
+    <button on:click={Register} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">Kaydol</button>
+   </div>
   </main>
   
   <style>

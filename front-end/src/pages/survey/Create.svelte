@@ -49,12 +49,12 @@
 
 </script>
 <main>
-    <input bind:value={title} required /><br>
-    <input bind:value={description} required /><br>
+    <input bind:value={title} required class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600"/><br>
+    <input bind:value={description} required class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600"/><br>
     {#each inputs as input}
-        <input type="text" bind:value={input.name}>
-        <button on:click={deleteOptions(input.id)}>Seçeneği sil</button><br>
+        <input type="text" bind:value={input.name} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">
+        <button on:click={deleteOptions(input.id)} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">Seçeneği sil</button><br>
     {/each}
-    <button on:click={addOptions}>Seçenek ekle</button><br>
-    <button on:click={send}>gönder</button>
+    <button on:click={addOptions} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">Seçenek ekle</button><br>
+    <button on:click={send} class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">gönder</button>
 </main>
