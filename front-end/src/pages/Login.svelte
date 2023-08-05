@@ -47,15 +47,17 @@
   <main>
     <h1>Giriş Yap</h1>
     {#if error}
-      <p style="color: red;">{error}</p>
+      <p style="color: red;" class="text-red-400 font-extrabold text-center">{error}</p>
     {/if}
-    <form>
-      <label for="email">E-posta:</label>
-      <input type="email" bind:value={email} id="email">
+   <div class="p-4 mb-1.5">
+     <form class="roundex-3xl bg-gray-300 py-5 px-5">
+      <label for="email" class="text-blue-600 pt-4">E-posta:</label>
+      <input type="email" bind:value={email} id="email" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">
   
-      <label for="pass">Şifre:</label>
-      <input type="password" bind:value={pass} id="pass">
+      <label for="pass" class="text-blue-600 pt-4">Şifre:</label>
+      <input type="password" bind:value={pass} id="pass" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">
   
       <button on:click|preventDefault={login}>Giriş Yap</button>
     </form>
+   </div>
   </main>
