@@ -17,6 +17,6 @@
 <main>
 <h2>Anketler</h2>
 {#each surveys as survey}
-    <a href="/survey/{survey.Token}">{survey.Title}</a><br>
+    <a href="/survey/{survey.Token}" class="py-5 px-5 rounded-3xl bg-gray-600 hover:outline-none border-4 border-blue-600">{survey.Title}</a><br>
 {/each}
 </main> 
